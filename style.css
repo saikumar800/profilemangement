@@ -1,0 +1,58 @@
+.content-section {
+    display: none;
+    margin: 20px;
+    background-color:rgb(245, 245, 245);
+    box-shadow: 10px 10px 10px 10px #dddcda;
+    padding: 40px;
+    height: 600px;
+}
+.content-section.active {
+    display: block;
+}
+.content-section h2{
+   color: rgb(110, 31, 3);
+   font-size: 30px;
+}
+.sidebar h4{
+    font-size: 20px;
+    padding-left: 7px;
+
+}
+.sidebar {
+    width: 250px;
+    background-color: hsl(210, 17%, 98%);
+    padding: 20px;
+    height: 100vh;
+    margin: 20px;
+}
+.sidebar a {
+    display: block;
+    color: #130e07;
+    padding: 10px;
+   
+}
+.sidebar a:hover {
+    color: orange;
+    text-decoration: none;
+}
+.input-container {
+    padding: 10px;
+}
+.input-container label {
+    font-weight: bold;
+}
+.input-field {
+    width: 400px;
+    border-radius: 8px;
+    height: 40px;
+    padding-left: 30px;
+    border-color: rgb(244, 243, 246);
+
+}
+.input-container i {
+    position: absolute;
+    padding: 10px;
+}
+.input-container label{
+   font-weight: 400;
+  }

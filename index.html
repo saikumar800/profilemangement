@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Content with Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
+     
+</head>
+<body>
+
+<div class="maincontainer d-flex">
+    <div class="sidebar">
+        <h4>My Profile</h4>
+        <a href="#" class="pernal-info" data-target="#personal-info">Personal Information</a>
+        <a href="#" data-target="#job-info">Job Information</a>
+        <a href="#" data-target="#employee-info">Employee Information</a>
+        <a href="#" data-target="#organization-info">Organization Information</a>
+    </div>
+
+    <div class="content-section active" id="personal-info">
+        <h2>Personal Information</h2>
+        <p>Profile image</p>
+        <input type="file" class="file">
+       
+        <div class="filelds d-flex flex-row">
+            <div class="input-container">
+                <label>Preferred Name</label><br>
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" type="text" placeholder="Username" >
+            </div>
+            <div class="input-container">
+                <label>Employee ID</label><br>
+                <i class="fa-solid fa-address-card"></i>
+                <input class="input-field" type="num" placeholder="Enter employee id" >
+            </div>
+        </div>
+        <div class="filelds d-flex flex-row">
+            <div class="input-container">
+                <label >Business Number</label><br>
+                <i class="fa-solid fa-phone-flip"></i>
+                <input class="input-field" type="number" placeholder="Enter your Mobile Num">
+              </div>
+              <div class="input-container">
+                <label >Business Email</label><br>
+                <i class="fa-solid fa-envelope"></i>
+                <input class="input-field" type="email" placeholder="Enter email id" >
+              </div>
+        
+        </div>
+        <div class="filelds d-flex flex-row">
+            <div class="input-container">
+                <label >Date of Birth</label><br>
+                <i class="fa-solid fa-cake-candles"></i>
+                <input class="input-field" type="date"  >
+              </div>
+              <div class="input-container">
+                <label >Location</label><br>
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <input class="input-field" type="text" placeholder="location" >
+              </div>
+        
+        </div>
+        <div class="filelds  d-flex flex-row">
+            <div class="input-container">
+                <label >Nationality</label><br>
+                <i class="fa-solid fa-flag"></i>
+                <input class="input-field" type="text" placeholder="Nationality" >
+              </div>
+              <div class="input-container">
+                <label >Citizenship</label><br>
+                <i class="fa-solid fa-flag"></i>
+                <input class="input-field" type="text" placeholder="Citizenship" >
+            </div>
+          </div>
+        
+
+      
+    </div>
+
+    <div class="content-section" id="job-info">
+        <h2>Job Information</h2>
+        <div class="filelds d-flex flex-row">
+            <div class="input-container ">
+                <label >Employment Type</label><br>
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" type="text" >
+              </div>
+              <div class="input-container">
+                <label >Weekly Work Hours</label><br>
+                <i class="fa-regular fa-clock"></i>
+                <input class="input-field" type="number" >
+              </div>
+        </div>
+        <div class="filelds d-flex flex-row">
+            <div class="input-container ">
+                <label >Location</label><br>
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <input class="input-field" type="text" >
+              </div>
+              <div class="input-container">
+                <label >Work Email</label><br>
+                <i class="fa-solid fa-envelope"></i>
+                <input class="input-field" type="email" >
+              </div>
+
+        </div>
+        <div class="input-container ">
+              
+            <label >Work Phone</label><br>
+            <i class="fa-solid fa-phone-flip"></i>
+            <input class="input-field" type="number">
+          </div>
+      
+    </div>
+
+    <div class="content-section" id="employee-info">
+        <h2>Employee Information</h2>
+        <div class="filelds d-flex flex-row">
+            <div class="input-container ">
+                <label >Employee ID</label><br>
+                <i class="fa-solid fa-address-card"></i>
+                <input class="input-field" type="number" >
+              </div>
+              <div class="input-container">
+                <label >Department</label><br>
+                <i class="fa-solid fa-building"></i>
+                <input class="input-field" type="text"  >
+              </div>
+
+        </div>
+        <div class="filelds d-flex flex-row">
+            <div class="input-container ">
+                <label >Division</label><br>
+                <i class="fa-solid fa-sitemap"></i>
+                <input class="input-field" type="text"  >
+              </div>
+              <div class="input-container">
+                <label >Position</label><br>
+                <i class="fa-solid fa-envelope"></i>
+                <input class="input-field" type="text" >
+              </div>
+
+        </div>
+        <div class="filelds d-flex flex-row">
+            <div class="input-container ">
+              
+                <label >Joining Date</label><br>
+                <i class="fa-solid fa-calendar-days"></i>
+                <input class="input-field" type="date"  >
+              </div>
+              <div class="input-container">
+                <label >Time in Position</label><br>
+                <i class="fa-regular fa-clock"></i>
+                <input class="input-field" type="number">
+              </div>
+            </div>
+
+       
+    </div>
+
+    <div class="content-section" id="organization-info">
+        <h2>Organization Information</h2>
+        <div class="filelds d-flex flex-row">
+            <div class="input-container ">
+                <label >Organization Name</label><br>
+                <i class="fa-solid fa-building"></i>
+                <input class="input-field" type="text" >
+              </div>
+              <div class="input-container">
+                <label >Type of Organization</label><br>
+                <i class="fa-solid fa-building"></i>
+                <input class="input-field" type="text"  >
+              </div>
+
+        </div>
+        <div class="filelds d-flex flex-row">
+            <div class="input-container ">
+                <label >Established In</label><br>
+                <i class="fa-solid fa-building"></i>
+                <input class="input-field" type="number" >
+              </div>
+              <div class="input-container">
+                <label >Website</label><br>
+                <i class="fa-solid fa-globe"></i>
+                <input class="input-field" type="text" >
+              </div>
+
+        </div>
+        <div class="filelds d-flex flex-row">
+        <div class="input-container ">
+          
+            <label >Location</label><br>
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <input class="input-field" type="text" name="usrnm">
+          </div>
+          <div class="input-container">
+            <label >Organization Contact No.</label><br>
+            <i class="fa-solid fa-phone-flip"></i>
+            <input class="input-field" type="number" name="usrnm">
+          </div>
+        </div>
+        <!-- Add organization information fields here -->
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script>
+    document.querySelectorAll('.sidebar a').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelectorAll('.content-section').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.querySelector(this.getAttribute('data-target')).classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>
